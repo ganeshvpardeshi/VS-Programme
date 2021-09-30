@@ -6,9 +6,8 @@ Pattern Type :-
 **
 *
  */
-#include<stdio>
+#include<stdio.h>
 #include<conio.h>
-using namespace std;
 int main()
 {
     int i,j;
@@ -18,14 +17,14 @@ int main()
         {
             if(j<=6-i)
             {
-                cout<<"*";
+                printf("*");
             }
             else
             {
-                cout<<" ";
+              printf(" ");
             }
         }
-        cout<<"\n";
+       printf("\n");
     }
     getch();
     return 0;
