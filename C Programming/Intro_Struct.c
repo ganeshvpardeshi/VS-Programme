@@ -8,15 +8,19 @@ struct Student
     float s_per;    
 
 };
-void main()
+int main()
 {
     struct Student s1;
 
-        printf("Enter the id first and last name and per ");
+        printf("Enter the ID, First and Last Name and Percentage : \n");
         scanf("%d",&s1.s_id);
         scanf("%s",&s1.f_name);
         scanf("%s",&s1.s_name);
         scanf("%f",&s1.s_per);
 
-    printf("%d \n%s %s \n%.2f",s1.s_id,s1.f_name,s1.s_name,s1.s_per);
+    printf("\nThe Student Details are as follows : \n");
+    printf("ID : %d \nName : %s %s \nPercentage : %.2f",s1.s_id,s1.f_name,s1.s_name,s1.s_per);
+
+    getch();
+    return 0;
 }

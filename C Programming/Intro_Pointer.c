@@ -15,8 +15,8 @@ printf("*************************************\n");
     printf("a=%d\n",a);
        printf("x=%d\n",&(*x));//it shows address value of a
           printf("y=%d\n",&(**y));/* it shows us address value of a,
-                            because we put the address of &(**y)*/
-    printf("y=%d\n",&(*y));// it shows us the address value of x
+                            because we put the address of &(**y)      */
+    printf("y showing address=%d\n",&(*y));// it shows us the address value of x
        printf("address y= %d\n",&y);//address value of y
           printf("address x= %d\n",&x);//address value of x
 

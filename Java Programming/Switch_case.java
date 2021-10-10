@@ -2,7 +2,8 @@ class Switch_case
 {
     public static void main(String [] args)
     {
-        int a=12,b=21,c,ch=4;
+        float a=12,b=21,c;
+        int ch=3;
         System.out.println("Press 1. for Addition ");
         System.out.println("Press 2. for Subtraction ");
         System.out.println("Press 3. for Multiplication ");

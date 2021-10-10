@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 int main()
 {
     int a,b,temp;
@@ -11,4 +12,8 @@ int main()
     a=b;
     b=temp;
     printf("\nthe number after swaping ...a is %d b is %d ",a,b);    
+
+    getch();
+    return 0;
+
 }

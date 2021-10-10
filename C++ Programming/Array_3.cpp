@@ -37,7 +37,7 @@ int main()
         }
     }
 
-    cout<<"Enter the 1st Matrix : "<<endl;
+    cout<<"The Addition of 2 Matrices is "<<endl;
     for(i=0;i<m;i++)
     {
         for(j=0;j<n;j++)
@@ -46,4 +46,6 @@ int main()
         }
         cout<<"\n";
     }    
+    getch();
+    return 0;
 }

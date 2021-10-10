@@ -24,5 +24,7 @@ int main()
     cout<<"The ID : "<<s1.s_id<<endl;
     cout<<"The Name : "<<s1.f_name<<" "<<s1.s_name<<endl;
     cout<<"And The Percentage : "<<s1.s_per<<endl;
-    
+
+    getch();
+    return 0;   
 }

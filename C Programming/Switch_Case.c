@@ -3,7 +3,6 @@
 int main()
 {
     int a,b,c,ch;
-    char d,y;
     printf("Press 1. for Addition ");
     printf("\nPress 2. for Subtraction ");
     printf("\nPress 3. for Multiplication ");

@@ -10,6 +10,7 @@ int main()
     cout<<"The address value of a is "<<&a<<endl;//this is the address value of a
     cout<<"The address value of b is "<<&b<<endl;//this is the address value of b
     cout<<"The address value of c is "<<&c<<endl;
+    
     cout<<"*******************************************************"<<endl;
 
     int x=11;
@@ -21,10 +22,12 @@ int main()
     cout<<"The Address value of z is "<<&z<<endl;
 
     cout<<"*******************************************************"<<endl;
+    
     cout<<&x<<endl;
     cout<<&(*y)<<endl;//this is the address value of x using " &(*y) "
     cout<<&(**z)<<endl;//this is the address value of x using " &(**z) "
     cout<<"*******************************************************"<<endl;
+    
     cout<<x<<endl;
     cout<<*y<<endl;//this is the value of x using " *y "
     cout<<**z<<endl;//this is the value of x using " **z "
