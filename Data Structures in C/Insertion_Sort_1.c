@@ -9,24 +9,31 @@ int main()
     printf("Enter the Elements in the Array: \n");
     for(i=0;i<n;i++)
     {
-        printf("Array[%d] : ",i);
+        printf("Array[%d] : ",i+1);
         scanf("%d",&a[i]);
     }
     for(i=1;i<n;i++)
     {
         temp=a[i];
-        int j=i-1;
-        while(j>=0 && a[j]>temp)
+
+        for(j=i-1;j>=0&&temp<a[j];j--)
         {
             a[j+1]=a[j];
-            j--;
         }
+        // temp=a[i];
+        // int j=i-1;
+        // while(j>=0 && a[j]>temp)
+        // {
+        //     a[j+1]=a[j];
+        //     j--;
+        // }
         a[j+1]=temp;
+
     }
+
     printf("\nSorted Array is : \n");
     for(i=0;i<n;i++)
-    {
-        // printf("%d ",a[i]);
-        printf("Array[%d] : %d\n",i,a[i]);
+    {0
+        printf("Array[%d] : %d\n",i+1,a[i]);
     }
 }
