@@ -1,0 +1,11 @@
+a=10
+i=2
+j=2
+while(j<a):
+    while(i<j):
+        if(j%i==0):
+            break
+        i=i+1
+    if(i==j):
+        print(i)
+    j=j+1
