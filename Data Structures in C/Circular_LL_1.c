@@ -40,23 +40,126 @@ struct node *InsertAtStart()
 }
 struct node *InsertAtEnd()
 {
-    
+    struct node *a,*b;
+    a=start;
+    b=CreateOne();
+    if(start==0)
+    {
+        start=b;
+    }
+    else
+    {
+        while(a->next!=start)
+        {
+            a=a->next;
+        }
+        a->next=b;
+        b->next=start;
+    }
 }
 struct node *InsertAtMiddle()
 {
+    struct node *p,*q;
+    int value;
 
+    printf("Enter a data value after that\n");
+    printf("you want to delete a data.");
+    scanf("%d",&value);
+
+    p=start;
+    q=CreateOne();
+    while(p!=0)
+    {
+        if(p->data==value)
+        {
+            q->next=p->next;
+            p->next=q;
+            printf("Data is inserted at given position successfully.");
+            break;
+        }
+        p=p->next;
+    }
 }
 struct node *DeleteAtStart()
 {
-
+    struct node *a,*b;
+    a=start;
+    if(start==0)
+    {
+        printf("Insert Node first.");
+    }
+    else
+    {
+        if(a->next==start)
+        {
+            start=0;
+            free(a);
+            printf("Data is Deleted Successfully.");
+        }
+        else
+        {
+            start=start->next;
+            b=start;
+            while(b->next!=a)
+            {
+                b=b->next;
+            }
+            b->next=start;
+            free(a);
+            printf("Data is Deleted Successfully.");
+        }
+    }
 }
 struct node *DeleteAtEnd()
 {
-
+    struct node *c,*d;
+    c=start;
+    d=start->next;
+    if(start==0)
+    {
+        printf("Insert Node first.");
+    }
+    else
+    { 
+        while(d->next!=start)
+        {
+            c=c->next;
+            d=d->next;
+        }
+        c->next=start;
+        d->next=0;
+        free(d);
+        printf("Data is Deleted Successfully.");
+    }
 }
 struct node *DeleteAtMiddle()
 {
+    struct node *x,*y;
+    int value;
+    x=start;
+    y=start->next;
+    if(start->next==start)
+    {
+        start=0;
+        free(x);
+        printf("Node is deleted successfully, Now List is empty.");
+    }
+    else
+    {
+        printf("Enter a data value after that\n");
+        printf("you want to delete a data.");
+        scanf("%d",&value);
 
+        while(x->data!=value)
+        {
+            x=x->next;
+            y=y->next;
+        }
+        x->next=y->next;
+        y->next=0;
+        free(y);
+        printf("The Node is deleted Successfully.");
+    }
 }
 struct node *Display()
 {
@@ -96,27 +199,27 @@ void main()
             }
             case 2:
             {
-                // InsertAtEnd();
+                InsertAtEnd();
                 break;
             }
             case 3:
             {
-                // InsertAtMiddle();
+                InsertAtMiddle();
                 break;
             }
             case 4:
             {
-                // DeleteAtStart();
+                DeleteAtStart();
                 break;
             }
             case 5:
             {
-                // DeleteAtEnd(); 
+                DeleteAtEnd(); 
                 break;
             }
             case 6:
             {
-                // DeleteAtMiddle();
+                DeleteAtMiddle();
                 break;
             }
             case 7:
