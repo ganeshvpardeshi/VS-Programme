@@ -1,0 +1,9 @@
+
+
+
+Sorting Techniques:     Best            Average         Worst
+
+Bubble Sort	            Ω(n)	        θ(n^2)	        O(n^2)	 
+Insertion Sort	        Ω(n)	        θ(n^2)	        O(n^2)	 
+Quick Sort	            Ω(n log(n))	    θ(n log(n))	    O(n^2)	 
+Merge Sort	            Ω(n log(n))	    θ(n log(n))	    O(n log(n))	 

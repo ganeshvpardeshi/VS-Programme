@@ -169,6 +169,20 @@ struct node *Display()
         p=p->next;
     }
 }
+struct node *ReverseDisplay()
+{
+    struct node *p;
+    p=START;
+    while(p->next!=NULL)
+    {
+        p=p->next;  
+    }
+    while(p!=NULL)
+    {
+        printf("%d ",p->data);
+        p=p->prev;
+    }
+}
 void main()
 {
     int val;
@@ -227,6 +241,11 @@ void main()
             case 8:
             {
                 exit(0);
+            }
+            case 9:
+            {
+                ReverseDisplay();
+                break;
             }
             default:
             {

@@ -4,7 +4,7 @@ int main()
 {
     int i,a[60],s,n;
     printf("Enter the Range of the Number : \n");
-    scanf("%d",&n);
+    scanf("%d",&n); //5
     printf("Enter the Elements in Array\n");
     for(i=0;i<n;i++)
     {
@@ -12,8 +12,8 @@ int main()
         scanf("%d",&a[i]);
     }
     printf("Enter the Number that you want to search : ");
-    scanf("%d",&s);
-    for(i=0;i<n;i++)
+    scanf("%d",&s); //element to be search.
+    for(i=0;i<n;i++) //0 to 4
     {
         if(s==a[i])
         {
@@ -22,7 +22,9 @@ int main()
             break;
         }
     }
-    if(i==n)
+    // when number is found then loop will break. i=1
+    //i=5
+    if(i==n) //1==5
     {
         printf("\nNumber is not found.");
         // goto x;

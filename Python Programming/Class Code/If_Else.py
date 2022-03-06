@@ -1,7 +1,7 @@
 a=10
 b=12
 c=11
-if((a>b)and(a>c)):
+if((a>b)or(a>c)):
     print("a is greater than b and c")
 elif((b>c)and(b>a)):
     print("b is greater than and c")

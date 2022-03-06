@@ -13,8 +13,10 @@ int main()
         n = n / 10;
     }
     if (temp == sum)
-        printf("palindrome number ");
+    {    printf("palindrome number ");
+        printf("%d   %d",sum,temp);}
     else
-        printf("not palindrome");
+        {printf("%d   %d",sum,temp);
+        printf("not palindrome");}
     return 0;
-}
+} 

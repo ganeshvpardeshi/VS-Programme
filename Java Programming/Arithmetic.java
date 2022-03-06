@@ -1,4 +1,4 @@
-//here we wrtiting a code for addition , subtraction , dividion , multiplication ..
+//here we write a code for addition , subtraction , Division , multiplication ..
 class Arithmetic
 {
     static void add(int x, int y)

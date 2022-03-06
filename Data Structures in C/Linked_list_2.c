@@ -6,14 +6,15 @@ struct node
     int data;
     struct node *next;
 };
-struct node *START = 0;
+struct node *START = NULL;
 struct node *createOne()
 {
     struct node *p;
+        //typecasting                   //size
     p = (struct node *)malloc(sizeof(struct node));
     printf("Enter the data : ");
     scanf("%d", &p->data);
-    p->next = 0;
+    p->next = NULL;
     return p;
 }
 struct node *insertAtStart()
@@ -37,7 +38,7 @@ struct node *insertAtEnd()
     struct node *ptr;
     d=createOne();
     ptr=START;
-    if (START == 0)
+    if (START == NULL)
     {
         START = d;
     }
@@ -50,6 +51,30 @@ struct node *insertAtEnd()
         ptr->next=d;
     }
 }
+struct node *insertAtIndex()
+{
+    int i=0,index;
+    struct node *p,*q;
+    printf("On which index do you want to insert (index starts from '0'): ");
+    scanf("%d",&index); //4
+
+    p=START;
+    q=createOne();
+    if(START==NULL)
+    {
+        printf("There is no list.");
+    }
+    else
+    {
+        while(i<index-1)  //0<2-1 === 0<1  //1 iteration
+        {
+            p=p->next;
+            i++;
+        }
+        q->next=p->next;
+        p->next=q;
+    }
+}
 struct node *insertAtMiddle()
 {
     int value;
@@ -57,13 +82,13 @@ struct node *insertAtMiddle()
 
     printf("Enter a data value after that\n");
     printf("you want to delete a data.");
-    scanf("%d",&value);
+    scanf("%d",&value); //21
 
     a=START;
     b=createOne();
-    while(a!=0)
+    while(a!=NULL)
     {
-        if(a->data==value)
+        if(a->data==value) //21 == 21
         {
             b->next=a->next;
             a->next=b;
@@ -86,7 +111,7 @@ struct node *deleteAtStart()
         x=START;
         START=START->next;
         x->next=0;
-        free(x);
+        free(x); //delete
         printf("Node is deleted successfully.");
     }
 }
@@ -103,7 +128,7 @@ struct node *deleteAtEnd()
         c=START;
         if(c->next==0)
         {
-            START=0;
+            START=NULL;
             free(c);
             printf("Node is deleted successfully.");
         }
@@ -124,6 +149,7 @@ struct node *deleteAtMiddle()
 {
     int value;
     struct node *a,*b;
+    
     a=START;
     b=START->next;
     
@@ -153,6 +179,7 @@ struct node *deleteAtMiddle()
 struct node *display()
 {
     struct node *ptr;
+    int count=0;
     if(START==0)
     {
         printf("List is empty.");
@@ -160,11 +187,13 @@ struct node *display()
     else
     {
         ptr = START;
-        while (ptr != 0)
+        while (ptr != NULL)
         {
             printf("%d  ", ptr->data);
+            ++count;
             ptr = ptr->next;
         }
+        printf("\nAnd the Number in Linked List is %d.",count);
     }
 }
 void main()
@@ -209,7 +238,7 @@ void main()
             }
             case 5:
             {
-               deleteAtEnd(); 
+                deleteAtEnd(); 
                 break;
             }
             case 6:
@@ -219,12 +248,17 @@ void main()
             }
             case 7:
             {
-               display(); 
+                display(); 
                 break;
             }
             case 8:
             {
                 exit(0);
+            }
+            case 9:
+            {
+                insertAtIndex();
+                break;
             }
             default:
             {

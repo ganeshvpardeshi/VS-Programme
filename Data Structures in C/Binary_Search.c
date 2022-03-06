@@ -10,12 +10,10 @@ int main()
     printf("The %d Elements \n",n);
     for(int i=0;i<n;i++)
     {
-        printf("Element [%d] : ",i);
+        printf("Element [%d] : ",i+1);
         scanf("%d",&a[i]);
     }
-
     r=n-1;
-
     printf("Enter a Number that you want to search : ");
     scanf("%d",&s);
     while(l<=r)
@@ -39,7 +37,6 @@ int main()
     {
         printf("The Number is Not Found. ");
     }
-
     getch();
     return 0;
 }

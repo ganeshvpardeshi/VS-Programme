@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 int main()
 {
     int a,b;
@@ -13,7 +13,7 @@ int main()
     {
         printf("B is Greater than a");
     }
-    else 
+    else
     {
         printf("Both are Equal");
     }
@@ -33,7 +33,7 @@ int main()
     {
         printf("The Z is Greater than X and Y");
     }
-    else 
+    else
     {
         printf("All Values of X, Y, and Z are Equal");
     }
