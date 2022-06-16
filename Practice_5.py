@@ -1,5 +1,12 @@
-for i in range (0,6):
-    if(i==3 or i==6):
-        {}
-    else:
-        print(i)
+import keyword
+# import math
+from math import *
+print(keyword.kwlist)
+
+print(factorial(4))
+
+
+print("Enter the value :")
+x = input()
+
+print(x)

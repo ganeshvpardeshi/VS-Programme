@@ -17,6 +17,10 @@ class Complex
         {
             cout<<"The Complex Number is "<<a<<"+"<<b<<"i"<<endl;
         }
+        void printSum()
+        {
+            cout<<"The Sum of Above Complex Number is "<<a<<"+"<<b<<"i"<<endl;
+        }
 };
 Complex sumComplex(Complex u1, Complex u2)
 {
@@ -36,5 +40,5 @@ int main()
     c2.printNumber();
 
     sum = sumComplex(c1,c2);
-    sum.printNumber();   
+    sum.printSum();   
 }

@@ -20,5 +20,5 @@ int main()
     Example a4(a1);
     a1.x++;
     a4.x++;
-    cout<<a1.x;
+    cout<<a1.x<<endl;
 }

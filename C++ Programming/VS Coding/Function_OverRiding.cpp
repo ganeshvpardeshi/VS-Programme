@@ -18,6 +18,6 @@ class Example1 : public Example
 };
 int main()
 {
-    Example1 e;
+    Example1  e;
     e.function();
 }

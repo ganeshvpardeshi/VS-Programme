@@ -23,10 +23,15 @@ class Parent
 class child : public Parent
 {
     public :
-    child() : Parent(2)
+    child()
     {
-        cout<<"This is the child Constructor"<<endl;
+        cout<<"This is the child Default Constructor"<<endl;
         cout<<"\n";
+    }
+    child(int a) : Parent(2)
+    {
+        cout<<"This is the child Parameterized Constructor "<<a<<endl;
+        cout<<"\n\n";
     }
     ~child()
     {
@@ -37,4 +42,6 @@ class child : public Parent
 int main()
 {
     child c;
+    cout<<"\n\n";
+    child d(1);
 }

@@ -1,8 +1,12 @@
+import java.util.Scanner;
 class Swaping 
 {
         public static void main(String [] args)
         {
-            int a=10,b=11,temp;
+            Scanner sc = new Scanner(System.in);
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int temp;
             System.out.println("Before swaping a="+a);
             System.out.println("Before swaping b="+b);
             temp=a;

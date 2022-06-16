@@ -13,6 +13,6 @@
         "streambuf": "cpp"
     },
     "java.project.sourcePaths": [
-        "Data Structure in Java"
+        "."
     ]
 }

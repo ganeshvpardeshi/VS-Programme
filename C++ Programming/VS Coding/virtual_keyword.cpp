@@ -3,7 +3,7 @@ using namespace std;
 class Nokia1
 {
     public :
-    /* using of this virtual keyword we creating lat binding between 
+    /* using of this virtual keyword we creating late binding between 
         parent fun1 and child fun1 thats why the fun1() is called by is p 
         if of Child class.*/
         virtual void fun1()      
@@ -22,7 +22,7 @@ class Nokia2 : public Nokia1
     public:
         void fun1()
         {
-            cout<<"fun2 child"<<endl;
+            cout<<"fun1 child"<<endl;
         }
         void fun2()
         {

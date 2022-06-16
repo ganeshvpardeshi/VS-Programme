@@ -2,7 +2,8 @@
 #include<stdlib.h>
 using namespace std;
 //  using Template we can do all operation on the any datatype
-template<class A>A function(A x,A y,A z)
+template<class A>
+A function(A x,A y,A z)
 {
     A sum;
     sum = x + y + z;

@@ -1,2 +1,2 @@
-def reverse(s):
-    print(''.join(reverse(s)))
+a = input("Enter the value: ") 
+print("",a)

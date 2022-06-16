@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-template<class A, class B>class Example
+template<class A, class B>
+class Example
 {
     B x,y,z;
     B sum;
